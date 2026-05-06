@@ -26,7 +26,7 @@ const useWebSocket = (token) => {
     }
 
     // Connect to WebSocket server
-    const apiUrl = import.meta.env.VITE_API_BASE_URL?.replace('/api', '') || 'http://localhost:5000';
+    const apiUrl = import.meta.env.VITE_API_BASE_URL?.replace('/api', '') || (import.meta.env.DEV ? 'http://localhost:5000' : 'https://gym-erp-backend-cvlk.onrender.com');
     
     socketRef.current = io(apiUrl, {
       auth: {
