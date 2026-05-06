@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "./styles/hover-effects.css";
+
+:root {
+  font-family: "Anton", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* PULSE Color Scheme - Only Black, White, Orange */
+:root {
+  --pulse-black: #000000;
+  --pulse-white: #ffffff;
+  --pulse-orange: #ff6600;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--pulse-black);
+  background-color: var(--pulse-white);
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.manrope{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Ensure all text is visible */
+.text-gray-400,
+.text-gray-500,
+.text-gray-600,
+.text-gray-700 {
+  color: var(--pulse-black) !important;
+}
+
+.text-white-50 {
+  color: var(--pulse-white) !important;
+}
+
+/* Navbar fixes */
+.navbar-collapse.show {
+  display: block !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-2 {
+    font-size: 2.5rem !important;
+  }
+
+  .display-4 {
+    font-size: 2rem !important;
+  }
+
+  .display-5 {
+    font-size: 1.75rem !important;
+  }
+}
